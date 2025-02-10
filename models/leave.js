@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
         foreignKey: 'personne_id',
         as:'personnel'
       }),
-
+      
       Leave.belongsTo(models.Type,{
         foreignKey:'type_id',
         as: 'type'

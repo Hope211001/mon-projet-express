@@ -15,6 +15,11 @@ module.exports = (sequelize, DataTypes) => {
         foreignKey:'personnel_id',
         as: 'leaves'
       })
+
+      Personnel.belongsTo(models.Poste,{
+        foreignKey:'poste_id',
+        as: 'poste'
+      })
     }
 
   }
